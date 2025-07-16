@@ -1,0 +1,71 @@
+.user-card {
+  border: 2px solid var( --theme-border);
+  border-radius: 10px;
+  padding: 1rem;
+  /* margin: 1rem auto; */
+  width: 50%;
+  /* max-width: 400px; */
+  background-color: var( --theme-bg);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px var(--theme-shadow);
+}
+
+.user-name {
+  color:var( --theme-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Context Menu */
+.context-menu {
+  position: absolute;
+  background:var(--theme-bg);
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--theme-shadow);
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 1000;
+  width: 180px;
+}
+
+.context-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.context-menu li:hover {
+  background: var(--theme-bg);
+}
+
+/* Overlay to close context menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+/* ===== Animation for Context Menu ===== */
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.context-menu {
+  animation: fadeSlideIn 0.2s ease-out;
+  transition: opacity 0.2s, transform 0.2s;
+}

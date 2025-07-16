@@ -1,0 +1,16 @@
+.smart-user-link {
+  display: inline-block;
+  color: var(--theme-color);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.smart-user-link:hover {
+  background-color: var( --theme-bg);
+  color: var(--theme-hover);
+  text-decoration: none;
+}

@@ -1,0 +1,76 @@
+.info-card {
+  background-color: var(--theme-card-bg);
+  color: var(--theme-text);
+  border: 1px solid var(--theme-border);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--theme-shadow);
+  margin: 20px auto;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.info-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--theme-color);
+}
+
+.info-bio {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: var(--theme-text);
+}
+
+.info-stats > div {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--theme-color);
+  color: var(--theme-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--theme-hover);
+}
+
+.edite-profile {
+  background: #00550e;
+  display: inline;
+  padding: 5px;
+  max-width: fit-content;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  color: var(--theme-color);
+  user-select: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.edite-profile:hover{
+  box-shadow:  0px 3px 5px -1px var(--theme-text);
+}
+
+.Edite {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: red;
+}

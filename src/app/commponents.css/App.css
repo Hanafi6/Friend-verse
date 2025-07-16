@@ -1,0 +1,59 @@
+.loading-bounce-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 20px;
+}
+
+.bounce-box {
+  width: 25px;
+  height: 25px;
+  background-color: #0070f3;
+  margin: 5px;
+  border-radius: 6px;
+
+  animation: bounce 0.6s infinite;
+}
+
+
+
+
+.bounce1 {
+  animation-delay: 0s;
+}
+
+.bounce2 {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.loading-text {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+
+.root {
+  width: 1090px;
+  margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.open-user {
+  width: 100px;
+  height: 100px;
+}

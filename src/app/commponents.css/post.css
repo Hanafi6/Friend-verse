@@ -1,0 +1,129 @@
+.post-card {
+  background-color: var(--theme-bg);
+  color: var(--theme-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--theme-shadow);
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 650px;
+  direction: rtl;
+  transition: box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 8px 20px var(--theme-shadow);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post-date {
+  font-size: 12px;
+  color:var(--theme-color);
+}
+
+.post-content {
+  font-size: 16px;
+  color: var(--theme-color);
+  margin: 12px 0;
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px var(--theme-shadow);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var( --theme-border);
+  font-size: 14px;
+  color: var(--theme-color);
+}
+
+.post-comments {
+  margin-top: 12px;
+  border-top: 1px solid var(--theme-border);
+  padding-top: 10px;
+}
+
+.post-comment {
+  font-size: 14px;
+  margin-bottom: 8px;
+  background-color: var(--theme-bg);
+  padding: 8px 12px;
+  border-radius: 18px;
+  max-width: fit-content;
+}
+
+.post-more-comments {
+  font-size: 13px;
+  color: var(--theme-color);
+  cursor: pointer;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--theme-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: var(--theme-bg);
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 650px;
+  max-height: 80vh;
+  overflow-y: auto;
+  direction: rtl;
+}
+
+.modal-comment {
+  padding: 10px;
+  border-bottom: 1px solid var(--theme-border);
+  font-size: 14px;
+}
+
+.comment-meta {
+  font-size: 11px;
+  color: var(--theme-color);
+}
+
+.close-modal-btn {
+  margin-top: 16px;
+  background-color: var(--theme-color);
+  color: var(--theme-text);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: var(--theme-hover);
+}

@@ -1,0 +1,99 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 90%;
+  background: var(--theme-modal-bg);
+  color: var(--theme-text);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--theme-shadow);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--theme-color);
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  background: var(--theme-card-bg);
+  color: var(--theme-text);
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+}
+
+.modal-content button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.modal-content button:first-of-type {
+  background-color: var(--theme-color);
+  color: white;
+}
+
+.modal-content .cancel-btn {
+  background-color: transparent;
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+}
+
+.modal-content button:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: var(--theme-color);
+}

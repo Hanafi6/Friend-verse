@@ -1,0 +1,208 @@
+:root {
+  --theme-bg: #fff;
+  --theme-secondary-bg: #f8f8f8;
+  --theme-gradient: linear-gradient(135deg, #eb5688 0%, #0ab8ec 100%);
+  --theme-text-primary: #222;
+  --theme-text-secondary: #555;
+  --theme-card-shadow: rgba(0, 0, 0, 0.15);
+  --theme-btn-add: #10b981;
+  --theme-btn-friend: #3b82f6;
+  --theme-post-bg: #ffffffcc;
+  --theme-scroll-thumb: #ccc;
+  --theme-scroll-hover: #888;
+}
+
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #f0f2f5, #dbe4ec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.user-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+} */
+
+.user-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: var(--theme-gradient);
+}
+
+.user-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--theme-text-primary);
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 1rem;
+  color: var(--theme-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.friend {
+  background-color: var(--theme-btn-friend);
+  color: white;
+}
+
+.btn.add {
+  background-color: var(--theme-btn-add);
+  color: white;
+}
+
+.postes {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  max-height: 60vh;
+  scroll-behavior: smooth;
+  animation: fadeInPosts 0.4s ease-in-out;
+}
+
+@keyframes fadeInPosts {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.post-item {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  animation: slideIn 0.4s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(15px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.post-item p {
+  font-size: 1rem;
+  color: var(--theme-text-primary);
+}
+
+.post-item img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Scrollbar */
+.postes::-webkit-scrollbar {
+  width: 8px;
+}
+.postes::-webkit-scrollbar-thumb {
+  background: var(--theme-scroll-thumb);
+  border-radius: 10px;
+}
+.postes::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-scroll-hover);
+}
+
+.no-posts {
+  text-align: center;
+  color: var(--theme-text-secondary);
+  font-weight: 500;
+  padding: 20px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .user-card {
+    padding: 1.5rem;
+  }
+  .user-card h2 {
+    font-size: 1.5rem;
+  }
+  .bio {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  .postes {
+    padding: 1rem;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.friend {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn.add {
+  background-color: #10b981;
+  color: white;
+}

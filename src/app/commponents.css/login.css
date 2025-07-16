@@ -1,0 +1,72 @@
+/* commponents.css/login.css */
+.form-log_in {
+  background:var( --theme-color);
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--theme-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-log_in h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--theme-color);
+}
+
+.form-log_in input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var( --theme-border);
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.form-log_in input:focus {
+  outline: none;
+  border-color: var(--theme-color);
+  box-shadow: 0 0 5px var(--theme-shadow);
+}
+
+.form-log_in button {
+  padding: 12px;
+  background: var(--theme-color);
+  color: var(--theme-text);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-log_in button:hover {
+  background: var(--theme-hover);
+}
+
+.inCorrect {
+  background: var( --theme-bg);
+  color: var(--theme-color);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  animation: shake 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  75%  { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

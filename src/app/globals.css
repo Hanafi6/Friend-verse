@@ -1,0 +1,32 @@
+:root {
+  /* 🌞 Light Theme */
+  --theme-color: #1877f2;             /* أزرق فيسبوك */
+  --theme-hover: #0f5ed2;             /* أزرق أغمق للهوفر */
+  --theme-bg: #f0f2f5;                /* خلفية ناعمة */
+  --theme-text: #412b2b;              /* نص غامق */
+  --theme-card-bg: #ffffff;           /* كروت بيضاء */
+  --theme-modal-bg: #ffffff;          /* مودال أبيض */
+  --theme-border: #d8d8d8;            /* حدود رمادية ناعمة */
+  --theme-shadow: rgba(80, 80, 80, 0.06); /* ظل خفيف */
+}
+
+
+
+
+[data-theme="dark"] {
+  /* 🌚 Dark Theme */
+  --theme-color: #4599ff;             /* أزرق فاتح */
+  --theme-hover: #227be5;             /* أزرق أغمق للهوفر */
+  --theme-bg: #18191a;                /* خلفية عامة داكنة */
+  --theme-text: #e4e6eb;              /* نص شبه أبيض */
+  --theme-card-bg: #242526;           /* كروت رمادية داكنة */
+  --theme-modal-bg: #3a3b3c;          /* مودال غامق */
+  --theme-border: #3e4042;            /* حدود باهتة */
+  --theme-shadow: rgba(255, 255, 255, 0.03); /* ظل خفيف */
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition: all 0.3s ease;
+}

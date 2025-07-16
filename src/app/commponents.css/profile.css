@@ -1,0 +1,116 @@
+.profile-container {
+  padding: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background-color: var(--theme-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 6px var(--theme-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: var(--theme-avatar-bg, #ccc);
+  border-radius: 50%;
+  background-image: url('/default-avatar.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--theme-text-primary, #1c1e21);
+}
+
+.profile-username {
+  font-size: 14px;
+  color: var(--theme-text-secondary, #65676b);
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.friend-button {
+  background-color: var(--theme-button-bg, #1877f2);
+  color: var(--theme-button-color, white);
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.friend-button:hover {
+  background-color: var(--theme-button-hover, #165ecb);
+}
+
+.more-info {
+  cursor: pointer;
+  font-size: 26px;
+  color: var(--theme-icon-color, #606770);
+  display: flex;
+  gap: 4px;
+  line-height: 1;
+}
+
+.frind_page_link {
+  background-color: var(--theme-button-bg, #1877f2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.profile-posts {
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 20px;
+  background-color: var(--theme-posts-bg, #f9f9f9);
+  border-radius: 12px;
+  border: 1px solid var(--theme-border, #ddd);
+  height: 74.4vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.profile-posts::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-posts::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.end-posts {
+  text-align: center;
+  color: var(--theme-color, #888);
+  font-size: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var( --theme-border);
+  margin-top: 20px;
+}

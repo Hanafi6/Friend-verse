@@ -1,0 +1,89 @@
+.frinds-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: var(--theme-bg, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px var(--theme-shadow);
+  transition: 0.3s ease;
+}
+
+.frinds-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--theme-text-primary, #222);
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.frinds-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.frind-card {
+  background: var(--theme-secondary-bg, #f7f7f7);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--theme-shadow);
+}
+
+.frind-card:hover {
+  background-color: #e6ecf0;
+  transform: translateY(-2px);
+}
+
+.frind-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-image: url('/default-avatar.png');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.frind-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frind-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--theme-text-primary, #050505);
+  transition: color 0.2s;
+}
+
+.frind-msg-btn {
+  background-color: var(--theme-btn-friend, #0ab8ec);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.frind-msg-btn:hover {
+  background-color: #0899c5;
+}
+
+.no-frinds {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+  font-style: italic;
+  font-size: 16px;
+}

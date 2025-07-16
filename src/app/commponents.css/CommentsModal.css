@@ -1,0 +1,66 @@
+:root {
+  --modal-bg: var(--theme-bg, #ffffff);
+  --modal-text: var(--theme-text, #222);
+  --modal-border: #eee;
+  --modal-overlay: rgba(0, 0, 0, 0.6);
+  --modal-btn-bg: var(--theme-color, #1877f2);
+  --modal-btn-text: var(--theme-text, #fff);
+  --modal-meta-text: #888;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--modal-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: var(--modal-bg);
+  color: var(--modal-text);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--theme-shadow);
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.comment-item {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--modal-border);
+}
+
+.comment-meta {
+  font-size: 12px;
+  color: var(--modal-meta-text);
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-modal {
+  margin-top: 20px;
+  background: var(--modal-btn-bg);
+  color: var(--modal-btn-text);
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.close-modal:hover {
+  background: var(--theme-hover, #145cc0cc);
+}
