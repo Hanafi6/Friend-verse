@@ -10,7 +10,6 @@ Includes login/register, friend system, real-time chat, posts with likes & comme
 - 🔐 Login / Register  
 - 📝 Create Posts (likes + comments)  
 - 👥 Add / Remove Friends  
-- 💬 Real-time Chat (Panda Chat)  
 - 👤 Profile Pages  
 - ⚙️ JSON Server as mock backend  
 - 🎨 Simple UI with CSS  
